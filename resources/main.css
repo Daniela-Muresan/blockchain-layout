@@ -155,6 +155,8 @@ button{
     text-decoration: none;
     color:black;
 }
+/*Poti, te rog sa ma ajuti cu o idee de cum as putea sa pozitionez footer-ul sa-mi
+ramana fix in partea de jos a paginii? Momentan cand micsorez pagina imi vine peste formular*/
 footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     font-weight: 100;
