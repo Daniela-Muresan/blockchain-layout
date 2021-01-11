@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.contact-page-wrapper{
+    width: 100%;
+    height: 250px;
+}
+.page-wrapper{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+}
+.logo{
+    width: 10%;
+    float:left;
+    line-height: 100px;
+}
+img{
+    max-width: 100%;
+}
+nav{
+    float:right;
+    line-height: 100px;
+}
+nav a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+}
+a:hover{
+    color:blue;
+}
+nav a:first-child{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    color: blue;
+}
+main h1,h2,.contact-page-wrapper h1{
+    text-transform: uppercase; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h1{
+    padding-top:10%;   
+    font-size: 50px;
+    color: rgb(255,255,255);
+}   
+main h2{ 
+    color: #acfdfe;
+    font-size: 70px;
+    letter-spacing: 20px;
+    font-weight: 100; 
+}
+.contact-page-wrapper h1, .contact-page-wrapper h2{
+    color: white;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 60px;
+}
+.contact-page-wrapper h1{
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+.contact-page-wrapper h2{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.line{
+    border-top-style: solid;
+    border-top-width: thin;
+    border-color: #acfdfe;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-page-wrapper .line{
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 200px;
+}
+p{
+    padding:2% 15%;
+    color: #acfdfe ;  
+}
+.contact-form-wrapper{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    left: 40%;
+} 
+label{
+    display: block;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 15px 0 5px;
+}
+.input-wrapper{
+    position: relative;
+    width: 200px;
+}
+.input-wrapper i{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #aaafb4;
+}
+.input-wrapper input{
+    padding-left: 30px ;
+}
+ textarea{
+    width: 250px;
+}
+textarea{
+    height: 100px;
+}
+.contact-form-wrapper .line{
+    margin-left: 0;
+    padding-left: 200px;
+    border-top-width: 2px;
+}
+button{
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: #acfdfe;
+    border: none;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.button-section div,button{
+    display: inline-block;
+    font-size: 10px;
+}
+/* .button-section div span{
+    font-weight: bold;
+} */
+.button-section div a{
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: 100;
+    text-transform: uppercase;
+    width:100%;
+    height: 10px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+footer .blockchain{
+    font-size: 12px;   
+}
+footer .technology{
+    font-size: 9px; 
+    color:#acfdfe; 
+    padding-left: 10px;
+}
