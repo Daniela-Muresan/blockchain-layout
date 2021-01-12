@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact Page</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="This is a contact page">
-        <meta name="keywords" content="contact,blockchain,layout,form">
-        <meta name="author" content="Daiela Muresan">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="external_resources/font-awsesome/css/all.css">
-        <link rel="stylesheet" type="text/css" href="resources/main.css">
-    </head>
-    <body>
+<head>
+    <title>Contact Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a contact page">
+    <meta name="keywords" content="contact,blockchain,layout,form">
+    <meta name="author" content="Daiela Muresan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="external_resources/font-awsesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="resources/main.css">
+</head>
+
+<body>
+    <div class="container-contact-page">
         <div class="contact-page-wrapper">
-             <div class="page-wrapper">
-                 <header>
+            <div class="page-wrapper">
+                <header>
                     <div class="logo">
                         <img src="assets/logo.png" alt="logo_img">
                     </div>
@@ -31,43 +34,46 @@
                 <div class="line"></div>
                 <h2>Fill out the form below to learn more.</h2>
             </div>
-                <form action="">
-                    <div class="contact-form-wrapper">
-                        <label for="FirstName-Input">First Name</label>
-                        <div class="input-wrapper"> 
-                             <i class="fas fa-user"></i>
-                            <input type="text" name="Fname-Input" id="FirstName-Input" minlength="5" placeholder="Enter your first name">
-                        </div>
+            <form action="">
+                <div class="contact-form-wrapper">
+                    <label for="FirstName-Input">First Name</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="Fname-Input" id="FirstName-Input" minlength="5"
+                            placeholder="Enter your first name">
+                    </div>
 
-                        <label for="LastName-Input">Last Name</label>
-                        <div class="input-wrapper"> 
-                            <i class="fas fa-user"></i>
-                             <input type="text" name="Lname-Input" id="LastName-Input" minlength="5" placeholder="Enter your last name">
-                        </div>
+                    <label for="LastName-Input">Last Name</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="Lname-Input" id="LastName-Input" minlength="5"
+                            placeholder="Enter your last name">
+                    </div>
 
-                        <label for="Email">Email</label>
-                        <div class="input-wrapper"> 
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" id="Email" required placeholder="Enter your email">
-                        </div>
+                    <label for="Email">Email</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="Email" required placeholder="Enter your email">
+                    </div>
 
-                        <div class="line"></div>
+                    <div class="line"></div>
 
-                        <label for="Message-Input">Message</label>
-                        <textarea id="Message-Input" minlength="50" maxlength="250"></textarea>
+                    <label for="Message-Input">Message</label>
+                    <textarea id="Message-Input" minlength="50" maxlength="250"></textarea>
 
-                        <section class="button-section">
-                            <button type="submit" accesskey="e">Submit</button>
-                                <div>or press <a href="#">enter</a> </div>
-                                <!-- <div>or press <span>enter</span> </div> -->
-                            </section>
-                        </div>
-                    </form>
-                    <footer>
-                        <div class="blockchain">Blockchain</div>
-                        <div class="technology">Technology</div>
-                    </footer>
+                    <section class="button-section">
+                        <button type="submit" accesskey="e">Submit</button>
+                        <div>or press <a href="#">enter</a> </div>
+                        <!-- <div>or press <span>enter</span> </div> -->
+                    </section>
+                </div>
+            </form>
+            <footer>
+                <div class="blockchain">Blockchain</div>
+                <div class="technology">Technology</div>
+            </footer>
         </div>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
