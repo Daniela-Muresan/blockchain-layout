@@ -24,13 +24,17 @@ html,body{
     background-position: center;
     text-align: center;
 }
+
+/* aici avem nevoie de putin spatiere pe header, logo este lipit de extremitati, pe meniu ai un spatiu ce ramane pe care nu l-ai decis tu, layout-ul trebuie respectat pe detaliile astea, altfel iti va fi intors inapoi */
 header{
     height: 100px;
     width: 100%;
 }
 .logo{
     width: 10%;
+    /* el de default vine pus sus in stanga, nu inteleg de ai nevoie de fix */
     float:left;
+    /* nu inteleg foarte bine daca ai folosit line-height pentru spatiere, dar neavand text aici nu este o tehnica ok */
     line-height: 100px;
 }
 img{
@@ -103,8 +107,13 @@ p{
     padding:2% 15%;
     color: #acfdfe ;  
 }
+
+/* as mai dori sa lucrezi putin pe form, still nu este respectat, detaliile nu sunt optionale in cazul nostru */
+/* input-uri, textarea, height, color, border - mai este de lucru aici */
 .contact-form-wrapper{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* de ce facem acest lucru? layout nu se construieste asa */
+    /* putem sa dam un width si sa centram orizontal, aceasta este o tehnica de layout, daca merge cat de cat nu inseamna ca e ok */
     position: absolute;
     left: 40%;
 } 
