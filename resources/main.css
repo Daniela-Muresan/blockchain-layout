@@ -23,100 +23,134 @@ html,body{
     background-size: cover;
     background-position: center;
     text-align: center;
+    box-sizing: border-box;
+    padding-top: 1px;
 }
-
-/* aici avem nevoie de putin spatiere pe header, logo este lipit de extremitati, pe meniu ai un spatiu ce ramane pe care nu l-ai decis tu, layout-ul trebuie respectat pe detaliile astea, altfel iti va fi intors inapoi */
-header{
-    height: 100px;
+.page2-wrapper{
     width: 100%;
+    height: 100%;
+    background-color: #fff;
 }
-.logo{
-    width: 10%;
-    /* el de default vine pus sus in stanga, nu inteleg de ai nevoie de fix */
-    float:left;
-    /* nu inteleg foarte bine daca ai folosit line-height pentru spatiere, dar neavand text aici nu este o tehnica ok */
-    line-height: 100px;
+.header-wrapper{
+    /* border: 2px solid #fff; */
+    display: flex;
+    align-items: center;
+    margin: 50px 50px;  
 }
-img{
-    max-width: 100%;
+.header-pg2{
+    background-image: url(../assets/background.jpg);
+}
+.header-pg2-content{
+    padding-top: 1px;
+    /* margin: 50px 50px; */
 }
 nav{
-    float:right;
-    line-height: 100px;
+    flex-grow: 1;
 }
-nav a{
+.nav-list{
+    /* border:2px solid #fff; */
+    display:flex;
+    align-items: center;
+    margin: 0 10px;
+    list-style: none;   
+}
+.logo{
+    width: 150px;
+    height: auto;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.nav-list li{
+    margin: 0 10px;
+}
+.nav-list li a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin: 0 10px;
     color: #fff;
 }
-a:hover{
-    color:blue;
-}
-nav a:first-child{
+.nav-list li:first-child{
+    margin-left: auto;
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+}
+.nav-list li:first-child a{
     color: blue;
 }
-main h1,h2,.contact-page-wrapper h1{
+.nav-list li a:hover{
+    color:blue;
+}
+main h1,main h2,.contact-page-wrapper h1{
     text-transform: uppercase; 
     font-family: Arial, Helvetica, sans-serif;
 }
 main h1{
-    padding-top:10%;   
-    font-size: 50px;
+    margin-top: 100px;   
+    font-size: 60px;
     color: rgb(255,255,255);
 }   
 main h2{ 
+    font-family: 'Montserrat', sans-serif;
     color: #acfdfe;
     font-size: 70px;
     letter-spacing: 20px;
     font-weight: 100; 
 }
-.contact-page-wrapper h1, .contact-page-wrapper h2{
+.content-header-wrapper{
+    margin: 0 50px;
+    /* border: 2px solid greenyellow;    */
+}
+.content-header-wrapper h1, .content-header-wrapper h2{
     color: white;
     font-weight: 100;
     text-align: left;
     padding-left: 60px;
+    margin: 10px 0;
 }
-.contact-page-wrapper h1{
+.content-header-wrapper h1{
+    font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     letter-spacing: 10px;
+    text-transform: uppercase;
 }
-.contact-page-wrapper h2{
+.content-header-wrapper h2{
     font-size: 20px;
     letter-spacing: 2px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 .line{
     border-top-style: solid;
     border-top-width: thin;
     border-color: #acfdfe;
-    width: 20%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
 }
-.contact-page-wrapper .line{
+.content-header-wrapper .line{
     margin-left: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 200px;
+    border-color: #30FFFB;
 }
 p{
-    padding:2% 15%;
+    padding: 2% 15%;
     color: #acfdfe ;  
 }
-
-/* as mai dori sa lucrezi putin pe form, still nu este respectat, detaliile nu sunt optionale in cazul nostru */
-/* input-uri, textarea, height, color, border - mai este de lucru aici */
-.contact-form-wrapper{
+.contact-form-wrapper, .button-section, footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* de ce facem acest lucru? layout nu se construieste asa */
-    /* putem sa dam un width si sa centram orizontal, aceasta este o tehnica de layout, daca merge cat de cat nu inseamna ca e ok */
-    position: absolute;
-    left: 40%;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 } 
+.content-form-wrapper{
+    margin: 10px 0 10px 100px;
+}
 label{
     display: block;
     font-size: 15px;
@@ -129,60 +163,67 @@ label{
 }
 .input-wrapper i{
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 6px;
+    left: 10px;
     color: #aaafb4;
 }
 .input-wrapper input{
-    padding-left: 30px ;
+    padding-left: 35px ;
+    height: 25px;
+    width: 300px;
+    border: 1px solid #aaafb4;
 }
  textarea{
-    width: 250px;
-}
-textarea{
+    width: 337px;
+    border: 1px solid #aaafb4;
     height: 100px;
+    resize: none;
 }
-.contact-form-wrapper .line{
-    margin-left: 0;
-    padding-left: 200px;
-    border-top-width: 2px;
+.line-form{
+    border-top: 2px solid #30FFFB;
+    margin: 20px 0 15px;
+    width: 337px;
 }
 button{
     display: block;
     width: 100px;
     height: 30px;
-    background-color: #acfdfe;
+    background-color: #30FFFB;
     border: none;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 .button-section div,button{
     display: inline-block;
-    font-size: 10px;
+    font-size: 12px; 
 }
-/* .button-section div span{
+.button-section  span{
     font-weight: bold;
-} */
-.button-section div a{
-    font-weight: bold;
-    text-decoration: none;
-    color:black;
+    text-decoration: none;   
 }
+.button-section a{
+     text-decoration: none;
+     color: black;
+     font-size: 14px;
+}
+
+/*poti sa-mi dai,te rog o idee de cum as putea sa aliniez footer-ul acesta?*/
 footer{
-    position: absolute;
-    bottom: 20px;
+    /* border: 2px solid black; */
+    margin-top: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    font-weight: 100;
     text-transform: uppercase;
-    width:100%;
-    height: 10px;
-    text-align: center;   
+    text-align: center; 
 }
 footer .blockchain{
-    font-size: 12px;   
+    font-size: 12px;
+    margin-right: 100px;   
 }
 footer .technology{
-    font-size: 9px; 
-    color:#acfdfe; 
+    font-size: 10px; 
+    color: #30FFFB; 
     padding-left: 10px;
+    margin-right: 100px;
+    font-weight: 700;
 }
