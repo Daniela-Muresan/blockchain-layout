@@ -39,6 +39,8 @@ html,body{
 }
 .header-pg2{
     background-image: url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .header-pg2-content{
     padding-top: 1px;
@@ -107,20 +109,20 @@ main h2{
     color: white;
     font-weight: 100;
     text-align: left;
-    padding-left: 60px;
+    padding-left: 20px;
     margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
 }
 .content-header-wrapper h1{
-    font-family: 'Montserrat', sans-serif;
     font-size: 50px;
-    letter-spacing: 10px;
     text-transform: uppercase;
 }
 .content-header-wrapper h2{
     font-size: 20px;
     letter-spacing: 2px;
-    padding-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 50px;
+
+    
 }
 .line{
     border-top-style: solid;
@@ -129,12 +131,15 @@ main h2{
     width: 30%;
     margin-left: auto;
     margin-right: auto;
+  
 }
-.content-header-wrapper .line{
-    margin-left: 60px;
+.content-header-wrapper .line-header{
+    border-top-style: solid;
+    border-top-width: 2px;
+    width: 400px;
+    margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 200px;
     border-color: #30FFFB;
 }
 p{
@@ -143,19 +148,35 @@ p{
 }
 .contact-form-wrapper, .button-section, footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 2px solid black; */
     width: 50%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
 } 
 .content-form-wrapper{
-    margin: 10px 0 10px 100px;
+    /* border: 2px solid red; */
+    width: 400px;
+    margin: 30px auto;
+    padding-left: 60px;
 }
 label{
     display: block;
     font-size: 15px;
     font-weight: 100;
-    margin: 15px 0 5px;
+    margin: 15px 0 10px;
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #aaafb4;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+    color: #aaafb4;
+}
+input::-moz-placeholder { /* Firefox 18- */
+ color: #aaafb4;
+}
+input::-ms-input-placeholder { /* IE 10+ */
+    color: #aaafb4;
 }
 .input-wrapper{
     position: relative;
@@ -181,23 +202,30 @@ label{
 }
 .line-form{
     border-top: 2px solid #30FFFB;
-    margin: 20px 0 15px;
+    margin: 40px 0 35px;
     width: 337px;
 }
+.button-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 button{
-    display: block;
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     background-color: #30FFFB;
     border: none;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin: 10px 0;
     font-family: 'Montserrat', sans-serif;
+    
 }
 .button-section div,button{
-    display: inline-block;
-    font-size: 12px; 
+    font-size: 12px;  
 }
+.button-section div{
+    margin-left: 10px;
+}
+ 
 .button-section  span{
     font-weight: bold;
     text-decoration: none;   
@@ -207,23 +235,20 @@ button{
      color: black;
      font-size: 14px;
 }
-
-/*poti sa-mi dai,te rog o idee de cum as putea sa aliniez footer-ul acesta?*/
 footer{
+    /* width: 30%; */
     /* border: 2px solid black; */
-    margin-top: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 20px;
     text-align: center; 
 }
 footer .blockchain{
-    font-size: 12px;
-    margin-right: 100px;   
+    font-size: 12px;   
 }
 footer .technology{
     font-size: 10px; 
     color: #30FFFB; 
-    padding-left: 10px;
-    margin-right: 100px;
     font-weight: 700;
 }
